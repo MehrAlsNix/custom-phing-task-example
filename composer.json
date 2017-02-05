@@ -9,6 +9,11 @@
       "email": "siad.ardroumli@gmail.com"
     }
   ],
+  "autoload": {
+    "psr-4": {
+      "MehrAlsNix\\CustomPhingTask\\": "src/"
+    }
+  },
   "require-dev": {
     "phing/phing": "2.16.*"
   }
