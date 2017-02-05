@@ -1,0 +1,15 @@
+{
+  "name": "mehr-als-nix/custom-phing-task-example",
+  "description": "Example for integrating a custom task to phing by auto discovering.",
+  "minimum-stability": "stable",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Siad Ardroumli",
+      "email": "siad.ardroumli@gmail.com"
+    }
+  ],
+  "require-dev": {
+    "phing/phing": "2.16.*"
+  }
+}
