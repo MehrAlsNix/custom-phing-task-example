@@ -21,9 +21,25 @@ class ExampleTask extends \Task
 {
     private $msg;
 
+    /** @var ExampleType $data */
+    private $data;
+
+    public function setExampletypeRef(\Reference $ref)
+    {
+        if ($this->data === null) {
+            $this->data = new ExampleType();
+            $this->data->setProject($this->getProject());
+        }
+        $this->data->setRefid($ref);
+    }
+
     public function main()
     {
-        $this->getProject()->log($this->msg);
+        if ($this->data !== null) {
+            $this->data->getData();
+        } else {
+            $this->getProject()->log($this->msg);
+        }
     }
 
     /**
