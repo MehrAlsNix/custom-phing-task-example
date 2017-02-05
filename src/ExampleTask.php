@@ -24,6 +24,9 @@ class ExampleTask extends \Task
     /** @var ExampleType $data */
     private $data;
 
+    /**
+     * @param \Reference $ref
+     */
     public function setExampletypeRef(\Reference $ref)
     {
         if ($this->data === null) {
