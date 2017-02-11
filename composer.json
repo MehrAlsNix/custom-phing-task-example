@@ -16,5 +16,13 @@
   },
   "require-dev": {
     "phing/phing": "2.16.*"
+  },
+  "extra": {
+    "phing-custom-taskdefs": {
+      "exampletask": "MehrAlsNix\\CustomPhingTask\\ExampleTask"
+    },
+    "phing-custom-typedefs": {
+      "exampletype": "MehrAlsNix\\CustomPhingTask\\ExampleType"
+    }
   }
 }
