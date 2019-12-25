@@ -3,6 +3,7 @@
   "description": "Example for integrating a custom task to phing by auto discovering.",
   "minimum-stability": "stable",
   "license": "MIT",
+  "type": "phing-extension",
   "authors": [
     {
       "name": "Siad Ardroumli",
@@ -13,9 +14,6 @@
     "psr-4": {
       "MehrAlsNix\\CustomPhingTask\\": "src/"
     }
-  },
-  "require-dev": {
-    "phing/phing": "2.16.*"
   },
   "extra": {
     "phing-custom-taskdefs": {
